@@ -1,0 +1,21 @@
+const fetchComments = (id) => {
+  return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
+    next: { revalidate: 60 },
+  }).then((res) => res.json());
+};
+
+export default async function CommentsPage({ params }) {
+  const { id } = params;
+  console.log("🚀 ~ file: page.jsx:9 ~ CommentsPage ~ id:", id)
+  const comments = await fetchComments(id);
+  return (
+    <ul>
+      {comments.map((comment) => (
+        <li key={comment.id}>
+          <h2>{comment.name}</h2>
+          <p>{comment.body}</p>
+        </li>
+      ))}
+    </ul>
+  );
+}
