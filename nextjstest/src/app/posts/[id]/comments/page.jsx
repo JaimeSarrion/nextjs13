@@ -6,7 +6,6 @@ const fetchComments = (id) => {
 
 export default async function CommentsPage({ params }) {
   const { id } = params;
-  console.log("🚀 ~ file: page.jsx:9 ~ CommentsPage ~ id:", id)
   const comments = await fetchComments(id);
   return (
     <ul>
