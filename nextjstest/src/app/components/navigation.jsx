@@ -10,6 +10,10 @@ const links = [
     route: "/about",
     label: "About",
   },
+  {
+    route: "/posts",
+    label: "Posts",
+  },
 ];
 
 export default function Navigation({ children }) {
