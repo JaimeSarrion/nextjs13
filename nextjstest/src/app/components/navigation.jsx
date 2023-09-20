@@ -1,20 +1,22 @@
 import Link from "next/link";
+import styled from "./navigation.module.css";
+
 const links = [
   {
     route: "/",
-    label: "home",
+    label: "Home",
   },
   {
     route: "/about",
-    label: "about",
+    label: "About",
   },
 ];
 
 export default function Navigation({ children }) {
   return (
-    <header>
+    <header className={styled.header}>
       <nav>
-        <ul>
+        <ul className={styled.navigation}>
           {links.map(({ route, label }) => (
             <li key={route}>
               <Link href={route}>{label}</Link>
