@@ -1,18 +1,18 @@
 "use client";
 import styled, { css } from "styled-components";
-import { defaultTheme } from "./theme";
+import { colors, fonts } from "./theme";
 const fontPublicSans = css`
-  font-family: "Public Sans", sans-serif;
+  font-family: ${fonts.primary};
 `;
 export const fontLexendMega = css`
-  font-family: "Lexend Mega", sans-serif;
+  font-family: ${fonts.heading};
 `;
 const fontArchivoBlack = css`
-  font-family: "Archivo Black", sans-serif;
+  font-family: ${fonts.secondary};
 `;
 
 export const StyledH4 = styled.h4`
-  color: ${({ color }) => (color ? color : defaultTheme.colors.white)};
+  color: ${({ color }) => (color ? color : colors.white)};
 
   font-size: 0.8;
   margin: 0;
@@ -20,7 +20,7 @@ export const StyledH4 = styled.h4`
 `;
 
 export const StyledH3 = styled.h3`
-  color: ${({ color }) => (color ? color : defaultTheme.colors.white)};
+  color: ${({ color }) => (color ? color : colors.white)};
 
   font-size: 1.2rem;
   margin: 0;
@@ -28,7 +28,7 @@ export const StyledH3 = styled.h3`
 `;
 
 export const StyledH2 = styled.h2`
-  color: ${({ color }) => (color ? color : defaultTheme.colors.white)};
+  color: ${({ color }) => (color ? color : colors.white)};
 
   font-size: 1.5rem;
   margin: 0;
@@ -37,7 +37,7 @@ export const StyledH2 = styled.h2`
 `;
 
 export const StyledH1 = styled.h1`
-  color: ${({ color }) => (color ? color : defaultTheme.colors.white)};
+  color: ${({ color }) => (color ? color : colors.white)};
 
   font-size: 2rem;
   margin: 0;
@@ -46,7 +46,7 @@ export const StyledH1 = styled.h1`
 `;
 
 export const StyledText = styled.p`
-  color: ${({ color }) => (color ? color : defaultTheme.colors.white)};
+  color: ${({ color }) => (color ? color : colors.white)};
   margin: 0;
   ${fontLexendMega}
 `;
