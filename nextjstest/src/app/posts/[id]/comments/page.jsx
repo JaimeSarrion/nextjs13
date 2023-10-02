@@ -1,7 +1,8 @@
 const fetchComments = async (id) => {
   await new Promise((resolve, reject) => {
-    return setTimeout(resolve, 5000);
+    return setTimeout(resolve, 3000);
   });
+ /*  throw new Error('Error al cargar los componentes') */
   return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, {
     next: { revalidate: 60 },
   }).then((res) => res.json());
