@@ -1,6 +1,6 @@
 
 export default function AboutPage() {
   return (
-    <p>Esto es el About page</p>
+    <h1>About Page</h1>
   )
 }
