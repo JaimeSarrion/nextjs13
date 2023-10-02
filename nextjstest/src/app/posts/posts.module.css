@@ -1,0 +1,11 @@
+.content {
+    padding: 15px;
+}
+
+.article {
+    margin-bottom: 15px;
+}
+
+.likeButton {
+    cursor: pointer;
+}
