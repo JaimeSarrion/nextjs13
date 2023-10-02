@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Blog
 
-## Getting Started
+**Summary**
 
-First, run the development server:
+This project is a test to see how Next.js works. It is a blog with different pages, post fetching, comments, etc.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**Features**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Pages:**
+    * Home: The main blog page with a list of the latest published posts.
+    * Posts: List of the posts.
+    * Post: Individual post page with the post content and comments.
+    * Comments: Comments of the selected post.
+* **Data fetching:**
+    * Posts are fetched from a REST API.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**How to install and run**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To install and run the project, follow these steps:
 
-## Learn More
+1. Clone the GitHub repository:
 
-To learn more about Next.js, take a look at the following resources:
+    ```https://github.com/JaimeSarrion/nextjs13.git```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```npm install```
 
-## Deploy on Vercel
+3. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```npm run dev```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The project will run on port 3000 on your computer.
+
+**License**
+
+This project is licensed under the MIT license.
+
+**Examples**
+
+Here are some examples of the application:
+
+* **Home page:**
+
+```http://localhost:3000/```
+
+* **About page:**
+
+```http://localhost:3000/about```
+
+
+* **Posts page:**
+
+```http://localhost:3000/posts```
+
+* **Comments page:**
+
+```http://localhost:3000/posts/[id]/comments```
+
+
+**Additional information**
+
+* The application is built using Next.js, React, and Javascript.
+* The posts are fetched from a REST API https://jsonplaceholder.typicode.com/.
