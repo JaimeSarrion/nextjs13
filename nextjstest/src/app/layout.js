@@ -1,5 +1,8 @@
 import "./globals.css";
-import Navigation from "./components/navigation/navigation";
+import Navigation from "../components/navigation/navigation";
+import Card from "../components/card/card";
+import { colors } from "../utils/theme";
+import styled from "./rootLayout.module.css";
 
 export default function RootLayout({ children }) {
   return (
@@ -8,8 +11,12 @@ export default function RootLayout({ children }) {
         <title>My first app with next 13</title>
       </head>
       <body>
-        <Navigation />
-        {children}
+        <Card background={colors.red_100}>
+          <div className={styled.content}>
+            <Navigation />
+            {children}
+          </div>
+        </Card>
       </body>
     </html>
   );
