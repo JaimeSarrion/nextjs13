@@ -6,9 +6,9 @@ import styled from "./homePage.module.css";
 export default function HomePage() {
   return (
     <>
-      <StyledH1 color={colors.black}>Home Page</StyledH1>
-      <Card background={colors.yellow_100}>
-        <StyledText className={styled.text} color={colors.black}>
+      <Card background={colors.yellow_100}  className={styled.text}>
+        <StyledH1 color={colors.black}>Home Page</StyledH1>
+        <StyledText color={colors.black}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
