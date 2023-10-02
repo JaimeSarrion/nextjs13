@@ -14,12 +14,12 @@ export default async function Post({ params, children }) {
   const { id } = params;
   const post = await fetchSinglePost(id);
   return (
-    <article>
+    <article className={styled.article}>
       <Card background={colors.light_blue_300} className={styled.content}>
-        <StyledH3>{post.title}</StyledH3>
-        <StyledText>{post.body}</StyledText>
+        <StyledH3 color={colors.black}>{post.title}</StyledH3>
+        <StyledText color={colors.black}>{post.body}</StyledText>
         <Link href="/posts/[id]/comments" as={`/posts/${post.id}/comments`}>
-          <StyledText>See comments</StyledText>
+          <StyledText  className={styled.seeComments}  color={colors.black}>See comments</StyledText>
         </Link>
         {children}
       </Card>
