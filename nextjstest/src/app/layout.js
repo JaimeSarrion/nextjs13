@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
         <title>My first app with next 13</title>
       </head>
       <body>
-        <Card background={colors.red_100}>
+        <Card background={colors.red_100} borderColor={colors.white}>
           <div className={styled.content}>
             <Navigation />
             {children}
