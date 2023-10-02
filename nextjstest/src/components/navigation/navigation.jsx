@@ -21,7 +21,7 @@ const links = [
 
 export default function Navigation({ children }) {
   return (
-    <Card className={styled.container} background={colors.red_300}>
+    <Card className={styled.container} background={colors.red_300} borderColor={colors.black}>
       <header className={styled.header}>
         <nav>
           <ul className={styled.navigation}>
